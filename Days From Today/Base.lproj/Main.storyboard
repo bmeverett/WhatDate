@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatDate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the Date?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2l6-Tg-kPS">
+                                <rect key="frame" x="173" y="28" width="255" height="31"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="R7s-hi-goM"/>
+                                    <constraint firstAttribute="width" constant="255" id="SM3-B7-x09"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.94508159909390332" green="1" blue="0.9994205406010368" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the number of days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sos-LI-mQd">
+                                <rect key="frame" x="195" y="80" width="210" height="31"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="RJu-Ja-hEu"/>
+                                    <constraint firstAttribute="height" constant="31" id="c4t-JL-FZc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="eg 123, 500" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vZn-mt-PrP">
+                                <rect key="frame" x="205" y="143" width="190" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0ZG-P3-1zW"/>
+                                    <constraint firstAttribute="width" constant="190" id="37f-U1-mrc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwe-dK-UaB">
+                                <rect key="frame" x="245" y="209" width="111" height="37"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="6wP-RL-761"/>
+                                    <constraint firstAttribute="width" constant="111" id="vb5-kQ-2sv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Find Date">
+                                    <color key="titleColor" red="0.89714014638695549" green="1" blue="0.83198304217207641" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="findDatePress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RVW-6k-hKm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XP2-50-FvA">
+                                <rect key="frame" x="208" y="481" width="184" height="37"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="PWA-eU-9EL"/>
+                                    <constraint firstAttribute="width" constant="184" id="T6i-CH-SxW"/>
+                                    <constraint firstAttribute="height" constant="37" id="V12-aL-Ecc"/>
+                                    <constraint firstAttribute="width" constant="184" id="WIR-BV-BNI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Add to Calendar">
+                                    <color key="titleColor" red="0.89714014639999995" green="1" blue="0.83198304219999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="T6i-CH-SxW"/>
+                                        <exclude reference="V12-aL-Ecc"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="addToCalendarPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vU8-hY-f2u"/>
+                                    <action selector="findDatePress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dUZ-as-d3l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhq-Uz-z4C">
+                                <rect key="frame" x="173" y="285" width="255" height="149"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="381" id="Uu7-U9-zaB"/>
+                                    <constraint firstAttribute="width" constant="255" id="Xyi-G7-Qgw"/>
+                                    <constraint firstAttribute="height" constant="177" id="dHf-Lz-tlc"/>
+                                    <constraint firstAttribute="height" constant="149" id="g1z-lC-4rD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Uu7-U9-zaB"/>
+                                        <exclude reference="dHf-Lz-tlc"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.043137254901960784" green="0.53725490196078429" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XP2-50-FvA" firstAttribute="centerX" secondItem="vhq-Uz-z4C" secondAttribute="centerX" id="6Bv-8f-u8A"/>
+                            <constraint firstItem="vhq-Uz-z4C" firstAttribute="centerX" secondItem="Zwe-dK-UaB" secondAttribute="centerX" id="6LK-VQ-VR5"/>
+                            <constraint firstItem="vhq-Uz-z4C" firstAttribute="top" secondItem="Zwe-dK-UaB" secondAttribute="bottom" constant="50" id="6bV-Dn-4ii"/>
+                            <constraint firstItem="vhq-Uz-z4C" firstAttribute="centerX" secondItem="Zwe-dK-UaB" secondAttribute="centerX" id="EWX-dI-9DV"/>
+                            <constraint firstItem="Zwe-dK-UaB" firstAttribute="top" secondItem="vZn-mt-PrP" secondAttribute="bottom" constant="36" id="FoR-ds-ibL"/>
+                            <constraint firstItem="XP2-50-FvA" firstAttribute="top" secondItem="vhq-Uz-z4C" secondAttribute="bottom" constant="47" id="G07-ZE-kwo"/>
+                            <constraint firstItem="vhq-Uz-z4C" firstAttribute="centerX" secondItem="Zwe-dK-UaB" secondAttribute="centerX" id="RGp-I1-pT2"/>
+                            <constraint firstItem="2l6-Tg-kPS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SS3-OX-7x8"/>
+                            <constraint firstItem="Zwe-dK-UaB" firstAttribute="centerX" secondItem="vZn-mt-PrP" secondAttribute="centerX" id="ScA-Gc-2zQ"/>
+                            <constraint firstItem="XP2-50-FvA" firstAttribute="top" secondItem="vhq-Uz-z4C" secondAttribute="bottom" constant="47" id="Uva-Jn-I3Q"/>
+                            <constraint firstItem="XP2-50-FvA" firstAttribute="centerX" secondItem="vhq-Uz-z4C" secondAttribute="centerX" id="ZCh-g2-Kd8"/>
+                            <constraint firstItem="vZn-mt-PrP" firstAttribute="centerX" secondItem="Sos-LI-mQd" secondAttribute="centerX" id="ZOV-UF-nfG"/>
+                            <constraint firstItem="vhq-Uz-z4C" firstAttribute="top" secondItem="Zwe-dK-UaB" secondAttribute="bottom" constant="39" id="dON-aS-9Lh"/>
+                            <constraint firstItem="vZn-mt-PrP" firstAttribute="top" secondItem="Sos-LI-mQd" secondAttribute="bottom" constant="32" id="e8o-dq-eF7"/>
+                            <constraint firstItem="XP2-50-FvA" firstAttribute="centerX" secondItem="vhq-Uz-z4C" secondAttribute="centerX" id="epj-qc-2k7"/>
+                            <constraint firstItem="XP2-50-FvA" firstAttribute="top" secondItem="vhq-Uz-z4C" secondAttribute="bottom" constant="8" id="ltX-Gl-6E6"/>
+                            <constraint firstItem="2l6-Tg-kPS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="rXP-a7-hKc"/>
+                            <constraint firstItem="Sos-LI-mQd" firstAttribute="centerX" secondItem="2l6-Tg-kPS" secondAttribute="centerX" id="wLD-lN-NpV"/>
+                            <constraint firstItem="Sos-LI-mQd" firstAttribute="top" secondItem="2l6-Tg-kPS" secondAttribute="bottom" constant="21" id="xjw-ug-ENG"/>
+                            <constraint firstItem="vhq-Uz-z4C" firstAttribute="top" secondItem="Zwe-dK-UaB" secondAttribute="bottom" constant="8" id="ysh-tb-9W2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6bV-Dn-4ii"/>
+                                <exclude reference="EWX-dI-9DV"/>
+                                <exclude reference="RGp-I1-pT2"/>
+                                <exclude reference="ysh-tb-9W2"/>
+                                <exclude reference="6Bv-8f-u8A"/>
+                                <exclude reference="Uva-Jn-I3Q"/>
+                                <exclude reference="ZCh-g2-Kd8"/>
+                                <exclude reference="ltX-Gl-6E6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="addToCalendarbtn" destination="XP2-50-FvA" id="xS8-WY-MNG"/>
+                        <outlet property="numberOfDaysText" destination="vZn-mt-PrP" id="po8-Mp-jgg"/>
+                        <outlet property="resultLabel" destination="vhq-Uz-z4C" id="XcO-5e-5F3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455" y="356"/>
+        </scene>
+    </scenes>
+</document>
