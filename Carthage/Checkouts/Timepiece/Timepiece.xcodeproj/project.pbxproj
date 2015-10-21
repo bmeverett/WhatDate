@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DE7CFC91B2712F400E0F331 /* NSCalendar+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA183001AEBC2DB00D95B9B /* NSCalendar+Timepiece.swift */; };
+		3DE7CFCA1B2712F400E0F331 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36DD67199FBE6700E752F5 /* Duration.swift */; };
+		3DE7CFCB1B2712F400E0F331 /* Int+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6182A199E26CD00FB7AAC /* Int+Timepiece.swift */; };
+		3DE7CFCC1B2712F400E0F331 /* NSDate+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC61833199F0B2100FB7AAC /* NSDate+Timepiece.swift */; };
+		3DE7CFCD1B2712F400E0F331 /* NSTimeInterval+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF717DE91AFFEECC00A70D2B /* NSTimeInterval+Timepiece.swift */; };
+		3DE7CFCE1B2712F400E0F331 /* String+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4453381AA2C4B900199949 /* String+Timepiece.swift */; };
+		3DE7CFCF1B2712F400E0F331 /* NSDateComponents+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA183021AEBC81800D95B9B /* NSDateComponents+Timepiece.swift */; };
+		3DE7CFD01B2712F400E0F331 /* NSCalendarUnit+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA29DB11B03C68000AE149B /* NSCalendarUnit+Timepiece.swift */; };
+		3DE7CFD11B27130300E0F331 /* DurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFD0DC31B07A5F700F69BA5 /* DurationTests.swift */; };
+		3DE7CFD21B27130300E0F331 /* Int+TimepieceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6182C199E26FE00FB7AAC /* Int+TimepieceTests.swift */; };
+		3DE7CFD31B27130300E0F331 /* NSDate+TimepieceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC61835199F0C0500FB7AAC /* NSDate+TimepieceTests.swift */; };
+		3DE7CFD41B27130300E0F331 /* String+TimepieceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44533A1AA2C50B00199949 /* String+TimepieceTests.swift */; };
+		3DE7CFD51B27130300E0F331 /* NSTimeInterval+TimepieceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2115F11B00A02800B3AD69 /* NSTimeInterval+TimepieceTests.swift */; };
+		3DE7CFD61B27130300E0F331 /* NSCalendarUnit+TimepieceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA29DB31B03D5F700AE149B /* NSCalendarUnit+TimepieceTests.swift */; };
+		3DE7CFD71B27131A00E0F331 /* NSCalendar+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA183001AEBC2DB00D95B9B /* NSCalendar+Timepiece.swift */; };
+		3DE7CFD81B27131A00E0F331 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36DD67199FBE6700E752F5 /* Duration.swift */; };
+		3DE7CFD91B27131A00E0F331 /* Int+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6182A199E26CD00FB7AAC /* Int+Timepiece.swift */; };
+		3DE7CFDA1B27131A00E0F331 /* NSDate+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC61833199F0B2100FB7AAC /* NSDate+Timepiece.swift */; };
+		3DE7CFDB1B27131A00E0F331 /* NSTimeInterval+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF717DE91AFFEECC00A70D2B /* NSTimeInterval+Timepiece.swift */; };
+		3DE7CFDC1B27131A00E0F331 /* String+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4453381AA2C4B900199949 /* String+Timepiece.swift */; };
+		3DE7CFDD1B27131A00E0F331 /* NSDateComponents+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA183021AEBC81800D95B9B /* NSDateComponents+Timepiece.swift */; };
+		3DE7CFDE1B27131A00E0F331 /* NSCalendarUnit+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA29DB11B03C68000AE149B /* NSCalendarUnit+Timepiece.swift */; };
+		3DE7CFDF1B27132C00E0F331 /* DurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFD0DC31B07A5F700F69BA5 /* DurationTests.swift */; };
+		3DE7CFE01B27132C00E0F331 /* Int+TimepieceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6182C199E26FE00FB7AAC /* Int+TimepieceTests.swift */; };
+		3DE7CFE11B27132C00E0F331 /* NSDate+TimepieceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC61835199F0C0500FB7AAC /* NSDate+TimepieceTests.swift */; };
+		3DE7CFE21B27132C00E0F331 /* String+TimepieceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44533A1AA2C50B00199949 /* String+TimepieceTests.swift */; };
+		3DE7CFE31B27132C00E0F331 /* NSTimeInterval+TimepieceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2115F11B00A02800B3AD69 /* NSTimeInterval+TimepieceTests.swift */; };
+		3DE7CFE41B27132C00E0F331 /* NSCalendarUnit+TimepieceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA29DB31B03D5F700AE149B /* NSCalendarUnit+TimepieceTests.swift */; };
+		8015E21A1BB9B44C00545DF5 /* NSCalendar+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA183001AEBC2DB00D95B9B /* NSCalendar+Timepiece.swift */; settings = {ASSET_TAGS = (); }; };
+		8015E21B1BB9B44C00545DF5 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36DD67199FBE6700E752F5 /* Duration.swift */; settings = {ASSET_TAGS = (); }; };
+		8015E21C1BB9B44C00545DF5 /* Int+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6182A199E26CD00FB7AAC /* Int+Timepiece.swift */; settings = {ASSET_TAGS = (); }; };
+		8015E21D1BB9B44C00545DF5 /* NSDate+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC61833199F0B2100FB7AAC /* NSDate+Timepiece.swift */; settings = {ASSET_TAGS = (); }; };
+		8015E21E1BB9B44C00545DF5 /* NSTimeInterval+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF717DE91AFFEECC00A70D2B /* NSTimeInterval+Timepiece.swift */; settings = {ASSET_TAGS = (); }; };
+		8015E21F1BB9B44C00545DF5 /* String+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4453381AA2C4B900199949 /* String+Timepiece.swift */; settings = {ASSET_TAGS = (); }; };
+		8015E2201BB9B44C00545DF5 /* NSDateComponents+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA183021AEBC81800D95B9B /* NSDateComponents+Timepiece.swift */; settings = {ASSET_TAGS = (); }; };
+		8015E2211BB9B44C00545DF5 /* NSCalendarUnit+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA29DB11B03C68000AE149B /* NSCalendarUnit+Timepiece.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DC6182F199E271500FB7AAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC61806199E1F8400FB7AAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DC6180E199E1F8400FB7AAC;
+			remoteInfo = Timepiece;
+		};
+		3DE7CFBC1B27126F00E0F331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC61806199E1F8400FB7AAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DE7CFAF1B27126F00E0F331;
+			remoteInfo = "Timepiece OSX";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D36DD67199FBE6700E752F5 /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		3D4453381AA2C4B900199949 /* String+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Timepiece.swift"; sourceTree = "<group>"; };
+		3D44533A1AA2C50B00199949 /* String+TimepieceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+TimepieceTests.swift"; sourceTree = "<group>"; };
+		3DC6180F199E1F8400FB7AAC /* Timepiece.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Timepiece.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC6181A199E1F8400FB7AAC /* Timepiece iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Timepiece iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC6182A199E26CD00FB7AAC /* Int+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Timepiece.swift"; sourceTree = "<group>"; };
+		3DC6182C199E26FE00FB7AAC /* Int+TimepieceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+TimepieceTests.swift"; sourceTree = "<group>"; };
+		3DC61833199F0B2100FB7AAC /* NSDate+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Timepiece.swift"; sourceTree = "<group>"; };
+		3DC61835199F0C0500FB7AAC /* NSDate+TimepieceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+TimepieceTests.swift"; sourceTree = "<group>"; };
+		3DE7CFB01B27126F00E0F331 /* Timepiece.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Timepiece.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE7CFB31B27126F00E0F331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE7CFB41B27126F00E0F331 /* Timepiece OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Timepiece OSX.h"; sourceTree = "<group>"; };
+		3DE7CFBA1B27126F00E0F331 /* Timepiece OSX Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Timepiece OSX Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE7CFC01B27126F00E0F331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE7CFC11B27126F00E0F331 /* Timepiece_OSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timepiece_OSXTests.swift; sourceTree = "<group>"; };
+		8015E2121BB9B41400545DF5 /* Timepiece.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Timepiece.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2115F11B00A02800B3AD69 /* NSTimeInterval+TimepieceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimeInterval+TimepieceTests.swift"; sourceTree = "<group>"; };
+		DF717DE91AFFEECC00A70D2B /* NSTimeInterval+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimeInterval+Timepiece.swift"; sourceTree = "<group>"; };
+		DFA183001AEBC2DB00D95B9B /* NSCalendar+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendar+Timepiece.swift"; sourceTree = "<group>"; };
+		DFA183021AEBC81800D95B9B /* NSDateComponents+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDateComponents+Timepiece.swift"; sourceTree = "<group>"; };
+		DFA29DB11B03C68000AE149B /* NSCalendarUnit+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendarUnit+Timepiece.swift"; sourceTree = "<group>"; };
+		DFA29DB31B03D5F700AE149B /* NSCalendarUnit+TimepieceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendarUnit+TimepieceTests.swift"; sourceTree = "<group>"; };
+		DFFD0DC31B07A5F700F69BA5 /* DurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DC6180B199E1F8400FB7AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC61817199E1F8400FB7AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE7CFAC1B27126F00E0F331 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE7CFB71B27126F00E0F331 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8015E20E1BB9B41400545DF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DC61805199E1F8400FB7AAC = {
+			isa = PBXGroup;
+			children = (
+				3DC61828199E204800FB7AAC /* Sources */,
+				3DC61829199E204800FB7AAC /* Tests */,
+				3DE7CFB11B27126F00E0F331 /* Timepiece OSX */,
+				3DE7CFBE1B27126F00E0F331 /* Timepiece OSXTests */,
+				3DC61810199E1F8400FB7AAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DC61810199E1F8400FB7AAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DC6180F199E1F8400FB7AAC /* Timepiece.framework */,
+				3DC6181A199E1F8400FB7AAC /* Timepiece iOS Tests.xctest */,
+				3DE7CFB01B27126F00E0F331 /* Timepiece.framework */,
+				3DE7CFBA1B27126F00E0F331 /* Timepiece OSX Tests.xctest */,
+				8015E2121BB9B41400545DF5 /* Timepiece.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DC61828199E204800FB7AAC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DFA183001AEBC2DB00D95B9B /* NSCalendar+Timepiece.swift */,
+				3D36DD67199FBE6700E752F5 /* Duration.swift */,
+				3DC6182A199E26CD00FB7AAC /* Int+Timepiece.swift */,
+				3DC61833199F0B2100FB7AAC /* NSDate+Timepiece.swift */,
+				DF717DE91AFFEECC00A70D2B /* NSTimeInterval+Timepiece.swift */,
+				3D4453381AA2C4B900199949 /* String+Timepiece.swift */,
+				DFA183021AEBC81800D95B9B /* NSDateComponents+Timepiece.swift */,
+				DFA29DB11B03C68000AE149B /* NSCalendarUnit+Timepiece.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3DC61829199E204800FB7AAC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DFFD0DC31B07A5F700F69BA5 /* DurationTests.swift */,
+				3DC6182C199E26FE00FB7AAC /* Int+TimepieceTests.swift */,
+				3DC61835199F0C0500FB7AAC /* NSDate+TimepieceTests.swift */,
+				3D44533A1AA2C50B00199949 /* String+TimepieceTests.swift */,
+				DF2115F11B00A02800B3AD69 /* NSTimeInterval+TimepieceTests.swift */,
+				DFA29DB31B03D5F700AE149B /* NSCalendarUnit+TimepieceTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		3DE7CFB11B27126F00E0F331 /* Timepiece OSX */ = {
+			isa = PBXGroup;
+			children = (
+				3DE7CFB41B27126F00E0F331 /* Timepiece OSX.h */,
+				3DE7CFB21B27126F00E0F331 /* Supporting Files */,
+			);
+			path = "Timepiece OSX";
+			sourceTree = "<group>";
+		};
+		3DE7CFB21B27126F00E0F331 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DE7CFB31B27126F00E0F331 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DE7CFBE1B27126F00E0F331 /* Timepiece OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DE7CFC11B27126F00E0F331 /* Timepiece_OSXTests.swift */,
+				3DE7CFBF1B27126F00E0F331 /* Supporting Files */,
+			);
+			path = "Timepiece OSXTests";
+			sourceTree = "<group>";
+		};
+		3DE7CFBF1B27126F00E0F331 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DE7CFC01B27126F00E0F331 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3DC6180C199E1F8400FB7AAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE7CFAD1B27126F00E0F331 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8015E20F1BB9B41400545DF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3DC6180E199E1F8400FB7AAC /* Timepiece iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC61822199E1F8400FB7AAC /* Build configuration list for PBXNativeTarget "Timepiece iOS" */;
+			buildPhases = (
+				3DC6180A199E1F8400FB7AAC /* Sources */,
+				3DC6180B199E1F8400FB7AAC /* Frameworks */,
+				3DC6180C199E1F8400FB7AAC /* Headers */,
+				3DC6180D199E1F8400FB7AAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Timepiece iOS";
+			productName = Timepiece;
+			productReference = 3DC6180F199E1F8400FB7AAC /* Timepiece.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3DC61819199E1F8400FB7AAC /* Timepiece iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC61825199E1F8400FB7AAC /* Build configuration list for PBXNativeTarget "Timepiece iOS Tests" */;
+			buildPhases = (
+				3DC61816199E1F8400FB7AAC /* Sources */,
+				3DC61817199E1F8400FB7AAC /* Frameworks */,
+				3DC61818199E1F8400FB7AAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DC61830199E271500FB7AAC /* PBXTargetDependency */,
+			);
+			name = "Timepiece iOS Tests";
+			productName = TimepieceTests;
+			productReference = 3DC6181A199E1F8400FB7AAC /* Timepiece iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DE7CFAF1B27126F00E0F331 /* Timepiece OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE7CFC71B27126F00E0F331 /* Build configuration list for PBXNativeTarget "Timepiece OSX" */;
+			buildPhases = (
+				3DE7CFAB1B27126F00E0F331 /* Sources */,
+				3DE7CFAC1B27126F00E0F331 /* Frameworks */,
+				3DE7CFAD1B27126F00E0F331 /* Headers */,
+				3DE7CFAE1B27126F00E0F331 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Timepiece OSX";
+			productName = "Timepiece OSX";
+			productReference = 3DE7CFB01B27126F00E0F331 /* Timepiece.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3DE7CFB91B27126F00E0F331 /* Timepiece OSX Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE7CFC81B27126F00E0F331 /* Build configuration list for PBXNativeTarget "Timepiece OSX Tests" */;
+			buildPhases = (
+				3DE7CFB61B27126F00E0F331 /* Sources */,
+				3DE7CFB71B27126F00E0F331 /* Frameworks */,
+				3DE7CFB81B27126F00E0F331 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DE7CFBD1B27126F00E0F331 /* PBXTargetDependency */,
+			);
+			name = "Timepiece OSX Tests";
+			productName = "Timepiece OSXTests";
+			productReference = 3DE7CFBA1B27126F00E0F331 /* Timepiece OSX Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8015E2111BB9B41400545DF5 /* Timepiece watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8015E2191BB9B41400545DF5 /* Build configuration list for PBXNativeTarget "Timepiece watchOS" */;
+			buildPhases = (
+				8015E20D1BB9B41400545DF5 /* Sources */,
+				8015E20E1BB9B41400545DF5 /* Frameworks */,
+				8015E20F1BB9B41400545DF5 /* Headers */,
+				8015E2101BB9B41400545DF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Timepiece watchOS";
+			productName = "Timepiece watchOS";
+			productReference = 8015E2121BB9B41400545DF5 /* Timepiece.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DC61806199E1F8400FB7AAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Naoto Kaneko";
+				TargetAttributes = {
+					3DC6180E199E1F8400FB7AAC = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3DC61819199E1F8400FB7AAC = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3DE7CFAF1B27126F00E0F331 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					3DE7CFB91B27126F00E0F331 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					8015E2111BB9B41400545DF5 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 3DC61809199E1F8400FB7AAC /* Build configuration list for PBXProject "Timepiece" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3DC61805199E1F8400FB7AAC;
+			productRefGroup = 3DC61810199E1F8400FB7AAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DC6180E199E1F8400FB7AAC /* Timepiece iOS */,
+				3DE7CFAF1B27126F00E0F331 /* Timepiece OSX */,
+				8015E2111BB9B41400545DF5 /* Timepiece watchOS */,
+				3DC61819199E1F8400FB7AAC /* Timepiece iOS Tests */,
+				3DE7CFB91B27126F00E0F331 /* Timepiece OSX Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DC6180D199E1F8400FB7AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC61818199E1F8400FB7AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE7CFAE1B27126F00E0F331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE7CFB81B27126F00E0F331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8015E2101BB9B41400545DF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DC6180A199E1F8400FB7AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE7CFD71B27131A00E0F331 /* NSCalendar+Timepiece.swift in Sources */,
+				3DE7CFD81B27131A00E0F331 /* Duration.swift in Sources */,
+				3DE7CFD91B27131A00E0F331 /* Int+Timepiece.swift in Sources */,
+				3DE7CFDA1B27131A00E0F331 /* NSDate+Timepiece.swift in Sources */,
+				3DE7CFDB1B27131A00E0F331 /* NSTimeInterval+Timepiece.swift in Sources */,
+				3DE7CFDC1B27131A00E0F331 /* String+Timepiece.swift in Sources */,
+				3DE7CFDD1B27131A00E0F331 /* NSDateComponents+Timepiece.swift in Sources */,
+				3DE7CFDE1B27131A00E0F331 /* NSCalendarUnit+Timepiece.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC61816199E1F8400FB7AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE7CFDF1B27132C00E0F331 /* DurationTests.swift in Sources */,
+				3DE7CFE01B27132C00E0F331 /* Int+TimepieceTests.swift in Sources */,
+				3DE7CFE11B27132C00E0F331 /* NSDate+TimepieceTests.swift in Sources */,
+				3DE7CFE21B27132C00E0F331 /* String+TimepieceTests.swift in Sources */,
+				3DE7CFE31B27132C00E0F331 /* NSTimeInterval+TimepieceTests.swift in Sources */,
+				3DE7CFE41B27132C00E0F331 /* NSCalendarUnit+TimepieceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE7CFAB1B27126F00E0F331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE7CFC91B2712F400E0F331 /* NSCalendar+Timepiece.swift in Sources */,
+				3DE7CFCA1B2712F400E0F331 /* Duration.swift in Sources */,
+				3DE7CFCB1B2712F400E0F331 /* Int+Timepiece.swift in Sources */,
+				3DE7CFCC1B2712F400E0F331 /* NSDate+Timepiece.swift in Sources */,
+				3DE7CFCD1B2712F400E0F331 /* NSTimeInterval+Timepiece.swift in Sources */,
+				3DE7CFCE1B2712F400E0F331 /* String+Timepiece.swift in Sources */,
+				3DE7CFCF1B2712F400E0F331 /* NSDateComponents+Timepiece.swift in Sources */,
+				3DE7CFD01B2712F400E0F331 /* NSCalendarUnit+Timepiece.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE7CFB61B27126F00E0F331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE7CFD11B27130300E0F331 /* DurationTests.swift in Sources */,
+				3DE7CFD21B27130300E0F331 /* Int+TimepieceTests.swift in Sources */,
+				3DE7CFD31B27130300E0F331 /* NSDate+TimepieceTests.swift in Sources */,
+				3DE7CFD41B27130300E0F331 /* String+TimepieceTests.swift in Sources */,
+				3DE7CFD51B27130300E0F331 /* NSTimeInterval+TimepieceTests.swift in Sources */,
+				3DE7CFD61B27130300E0F331 /* NSCalendarUnit+TimepieceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8015E20D1BB9B41400545DF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8015E2201BB9B44C00545DF5 /* NSDateComponents+Timepiece.swift in Sources */,
+				8015E21F1BB9B44C00545DF5 /* String+Timepiece.swift in Sources */,
+				8015E21D1BB9B44C00545DF5 /* NSDate+Timepiece.swift in Sources */,
+				8015E21A1BB9B44C00545DF5 /* NSCalendar+Timepiece.swift in Sources */,
+				8015E2211BB9B44C00545DF5 /* NSCalendarUnit+Timepiece.swift in Sources */,
+				8015E21B1BB9B44C00545DF5 /* Duration.swift in Sources */,
+				8015E21E1BB9B44C00545DF5 /* NSTimeInterval+Timepiece.swift in Sources */,
+				8015E21C1BB9B44C00545DF5 /* Int+Timepiece.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DC61830199E271500FB7AAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DC6180E199E1F8400FB7AAC /* Timepiece iOS */;
+			targetProxy = 3DC6182F199E271500FB7AAC /* PBXContainerItemProxy */;
+		};
+		3DE7CFBD1B27126F00E0F331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DE7CFAF1B27126F00E0F331 /* Timepiece OSX */;
+			targetProxy = 3DE7CFBC1B27126F00E0F331 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3DC61820199E1F8400FB7AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3DC61821199E1F8400FB7AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3DC61823199E1F8400FB7AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Timepiece.xcodeproj/Timepiece-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "naoty.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Timepiece;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DC61824199E1F8400FB7AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Timepiece.xcodeproj/Timepiece-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "naoty.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Timepiece;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3DC61826199E1F8400FB7AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Timepiece.xcodeproj/TimepieceTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "naoty.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DC61827199E1F8400FB7AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Timepiece.xcodeproj/TimepieceTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "naoty.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3DE7CFC31B27126F00E0F331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Timepiece.xcodeproj/Timepiece-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "naoty.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Timepiece;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3DE7CFC41B27126F00E0F331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Timepiece.xcodeproj/Timepiece-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "naoty.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Timepiece;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3DE7CFC51B27126F00E0F331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Timepiece.xcodeproj/TimepieceTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "naoty.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3DE7CFC61B27126F00E0F331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Timepiece.xcodeproj/TimepieceTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "naoty.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8015E2171BB9B41400545DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Timepiece.xcodeproj/Timepiece-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = naoty.Timepiece;
+				PRODUCT_NAME = Timepiece;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8015E2181BB9B41400545DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Timepiece.xcodeproj/Timepiece-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = naoty.Timepiece;
+				PRODUCT_NAME = Timepiece;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DC61809199E1F8400FB7AAC /* Build configuration list for PBXProject "Timepiece" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC61820199E1F8400FB7AAC /* Debug */,
+				3DC61821199E1F8400FB7AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC61822199E1F8400FB7AAC /* Build configuration list for PBXNativeTarget "Timepiece iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC61823199E1F8400FB7AAC /* Debug */,
+				3DC61824199E1F8400FB7AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC61825199E1F8400FB7AAC /* Build configuration list for PBXNativeTarget "Timepiece iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC61826199E1F8400FB7AAC /* Debug */,
+				3DC61827199E1F8400FB7AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE7CFC71B27126F00E0F331 /* Build configuration list for PBXNativeTarget "Timepiece OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE7CFC31B27126F00E0F331 /* Debug */,
+				3DE7CFC41B27126F00E0F331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE7CFC81B27126F00E0F331 /* Build configuration list for PBXNativeTarget "Timepiece OSX Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE7CFC51B27126F00E0F331 /* Debug */,
+				3DE7CFC61B27126F00E0F331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8015E2191BB9B41400545DF5 /* Build configuration list for PBXNativeTarget "Timepiece watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8015E2171BB9B41400545DF5 /* Debug */,
+				8015E2181BB9B41400545DF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DC61806199E1F8400FB7AAC /* Project object */;
+}

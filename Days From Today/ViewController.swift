@@ -10,6 +10,7 @@ import UIKit
 import EventKit
 import EventKitUI
 import iAd
+import Timepiece
 
 class ViewController: UIViewController, EKEventEditViewDelegate {
     
