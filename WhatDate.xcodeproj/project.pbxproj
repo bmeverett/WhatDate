@@ -130,6 +130,7 @@
 					2E0A78E81B8BC96600B54772 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = KMSJ6H33G8;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -293,6 +294,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = WhatDate;
 				PRODUCT_NAME = WhatDate;
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -312,6 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = WhatDate;
 				PRODUCT_NAME = WhatDate;
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
