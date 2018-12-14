@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,34 +18,31 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the Date?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2l6-Tg-kPS">
-                                <rect key="frame" x="173" y="28" width="255" height="31"/>
-                                <animations/>
+                                <rect key="frame" x="79.666666666666686" y="28" width="255" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="R7s-hi-goM"/>
                                     <constraint firstAttribute="width" constant="255" id="SM3-B7-x09"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="textColor" red="0.94508159909390332" green="1" blue="0.9994205406010368" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.94508159909390332" green="1" blue="0.9994205406010368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the number of days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sos-LI-mQd">
-                                <rect key="frame" x="195" y="80" width="210" height="31"/>
-                                <animations/>
+                                <rect key="frame" x="102" y="80" width="210" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="RJu-Ja-hEu"/>
                                     <constraint firstAttribute="height" constant="31" id="c4t-JL-FZc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="eg 123, 500" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vZn-mt-PrP">
-                                <rect key="frame" x="205" y="143" width="190" height="30"/>
-                                <animations/>
+                                <rect key="frame" x="112" y="143" width="190" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0ZG-P3-1zW"/>
                                     <constraint firstAttribute="width" constant="190" id="37f-U1-mrc"/>
@@ -50,23 +51,21 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwe-dK-UaB">
-                                <rect key="frame" x="245" y="209" width="111" height="37"/>
-                                <animations/>
+                                <rect key="frame" x="151.66666666666666" y="209" width="110.99999999999997" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="6wP-RL-761"/>
                                     <constraint firstAttribute="width" constant="111" id="vb5-kQ-2sv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Find Date">
-                                    <color key="titleColor" red="0.89714014638695549" green="1" blue="0.83198304217207641" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.89714014638695549" green="1" blue="0.83198304217207641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="findDatePress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RVW-6k-hKm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XP2-50-FvA">
-                                <rect key="frame" x="208" y="481" width="184" height="37"/>
-                                <animations/>
+                                <rect key="frame" x="115" y="481" width="184" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="PWA-eU-9EL"/>
                                     <constraint firstAttribute="width" constant="184" id="T6i-CH-SxW"/>
@@ -75,7 +74,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Add to Calendar">
-                                    <color key="titleColor" red="0.89714014639999995" green="1" blue="0.83198304219999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.89714014639999995" green="1" blue="0.83198304219999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -89,8 +88,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhq-Uz-z4C">
-                                <rect key="frame" x="173" y="285" width="255" height="149"/>
-                                <animations/>
+                                <rect key="frame" x="79.666666666666686" y="285" width="255" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="381" id="Uu7-U9-zaB"/>
                                     <constraint firstAttribute="width" constant="255" id="Xyi-G7-Qgw"/>
@@ -98,7 +96,7 @@
                                     <constraint firstAttribute="height" constant="149" id="g1z-lC-4rD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -108,8 +106,7 @@
                                 </variation>
                             </label>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" red="0.043137254901960784" green="0.53725490196078429" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.043137254901960784" green="0.53725490196078429" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="XP2-50-FvA" firstAttribute="centerX" secondItem="vhq-Uz-z4C" secondAttribute="centerX" id="6Bv-8f-u8A"/>
                             <constraint firstItem="vhq-Uz-z4C" firstAttribute="centerX" secondItem="Zwe-dK-UaB" secondAttribute="centerX" id="6LK-VQ-VR5"/>

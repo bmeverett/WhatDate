@@ -22,8 +22,6 @@ class ViewController: UIViewController, EKEventEditViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //display ads
-        self.canDisplayBannerAds = true
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,8 +44,8 @@ class ViewController: UIViewController, EKEventEditViewDelegate {
         if  Int(numberOfDaysText.text!) == nil{
             //check if nothing has been entered
             let alertController = UIAlertController(title: "", message:
-                "Please enter a valid number.", preferredStyle: UIAlertControllerStyle.alert)
-            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+                "Please enter a valid number.", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default,handler: nil))
             
             self.present(alertController, animated: true, completion: nil)
             addToCalendarbtn.isEnabled = false
@@ -102,8 +100,8 @@ class ViewController: UIViewController, EKEventEditViewDelegate {
                 
                 //if no cal
                 let alertController = UIAlertController(title: "", message:
-                    "Access to your calendar has not been granted. Please go into your device settings to allow calendar access.", preferredStyle: UIAlertControllerStyle.alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+                    "Access to your calendar has not been granted. Please go into your device settings to allow calendar access.", preferredStyle: UIAlertController.Style.alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default,handler: nil))
                 
                 self.present(alertController, animated: true, completion: nil)
                 

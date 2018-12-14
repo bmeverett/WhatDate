@@ -3,6 +3,30 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+## 1.3.1
+Released on 2017-10-01.
+
+### Fixed
+* Issue where apps could not be summited to Appstore. [#90](https://github.com/naoty/Timepiece/pull/90)
+
+## 1.3.0
+Released on 2017-09-30.
+
+### Added
+* Swift 4 support
+
+## 1.2.0
+Released on 2017-04-30.
+
+### Added
+* Support Swift Package Manager. [#83](https://github.com/naoty/Timepiece/pull/83)
+* `truncated(_:)`, which creates a `Date` instance by truncating the components. [#82](https://github.com/naoty/Timepiece/pull/82)
+* `truncated(from:)`, which creates a `Date` instance by truncating the components from a given component. [#82](https://github.com/naoty/Timepiece/pull/82)
+
+### Fixed
+* Rename `string(inDateStyle:andTimeStyle:)` to `stringIn(dateStyle:timeStyle:)`.
+* Rename `dateInISO8601Format(withOptions:)` to `dateInISO8601Format(with:)`.
+
 ## 1.1.0
 Released on 2017-01-06.
 

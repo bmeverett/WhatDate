@@ -1,3 +1,4 @@
 framework module Timepiece {
-    header "Timepiece-Swift.h"
+  header "Timepiece-Swift.h"
+  requires objc
 }
