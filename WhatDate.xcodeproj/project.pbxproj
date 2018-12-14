@@ -14,9 +14,7 @@
 		2E0A78FA1B8BC96600B54772 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0A78F81B8BC96600B54772 /* LaunchScreen.storyboard */; };
 		2E0A79021B8BDCD900B54772 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0A79011B8BDCD900B54772 /* EventKit.framework */; };
 		2E31F3021B8C877C002922E6 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E31F3011B8C877C002922E6 /* EventKitUI.framework */; };
-		2E3AB0DC1BD84A3A0064BF77 /* Timepiece.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3AB0DA1BD84A300064BF77 /* Timepiece.framework */; };
-		2E3AB0DD1BD84A3A0064BF77 /* Timepiece.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3AB0DA1BD84A300064BF77 /* Timepiece.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2E65C5E51B8D172B00A7B008 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E65C5E41B8D172B00A7B008 /* iAd.framework */; };
+		8FC126E9CC8ACB044762D9CB /* Pods_WhatDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2F72498AED9386B813AF30 /* Pods_WhatDate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2E3AB0DD1BD84A3A0064BF77 /* Timepiece.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,8 +40,9 @@
 		2E0A78FB1B8BC96600B54772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E0A79011B8BDCD900B54772 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		2E31F3011B8C877C002922E6 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
-		2E3AB0DA1BD84A300064BF77 /* Timepiece.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Timepiece.framework; path = Carthage/Build/iOS/Timepiece.framework; sourceTree = "<group>"; };
-		2E65C5E41B8D172B00A7B008 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		2E9FC4987EFA5B84580FA56A /* Pods-WhatDate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatDate.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatDate/Pods-WhatDate.release.xcconfig"; sourceTree = "<group>"; };
+		686A7C645A9A59155D0AD559 /* Pods-WhatDate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatDate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatDate/Pods-WhatDate.debug.xcconfig"; sourceTree = "<group>"; };
+		FB2F72498AED9386B813AF30 /* Pods_WhatDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,25 +50,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E3AB0DC1BD84A3A0064BF77 /* Timepiece.framework in Frameworks */,
-				2E65C5E51B8D172B00A7B008 /* iAd.framework in Frameworks */,
 				2E31F3021B8C877C002922E6 /* EventKitUI.framework in Frameworks */,
 				2E0A79021B8BDCD900B54772 /* EventKit.framework in Frameworks */,
+				8FC126E9CC8ACB044762D9CB /* Pods_WhatDate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B4D649D6620A5EAB8D096C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				686A7C645A9A59155D0AD559 /* Pods-WhatDate.debug.xcconfig */,
+				2E9FC4987EFA5B84580FA56A /* Pods-WhatDate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2E0A78E01B8BC96600B54772 = {
 			isa = PBXGroup;
 			children = (
-				2E3AB0DA1BD84A300064BF77 /* Timepiece.framework */,
-				2E65C5E41B8D172B00A7B008 /* iAd.framework */,
 				2E31F3011B8C877C002922E6 /* EventKitUI.framework */,
 				2E0A79011B8BDCD900B54772 /* EventKit.framework */,
 				2E0A78EB1B8BC96600B54772 /* Days From Today */,
 				2E0A78EA1B8BC96600B54772 /* Products */,
+				0B4D649D6620A5EAB8D096C6 /* Pods */,
+				CA9CDF7DCC9955B54E80BB3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +101,14 @@
 			path = "Days From Today";
 			sourceTree = "<group>";
 		};
+		CA9CDF7DCC9955B54E80BB3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB2F72498AED9386B813AF30 /* Pods_WhatDate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,10 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E0A78FE1B8BC96600B54772 /* Build configuration list for PBXNativeTarget "WhatDate" */;
 			buildPhases = (
+				3DE3F723ABFC03D25D54F3A5 /* [CP] Check Pods Manifest.lock */,
 				2E0A78E51B8BC96600B54772 /* Sources */,
 				2E0A78E61B8BC96600B54772 /* Frameworks */,
 				2E0A78E71B8BC96600B54772 /* Resources */,
 				2E3AB0DE1BD84A3A0064BF77 /* Embed Frameworks */,
+				9D6F3124CD0C1A04A66EE815 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +178,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DE3F723ABFC03D25D54F3A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatDate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D6F3124CD0C1A04A66EE815 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhatDate/Pods-WhatDate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Timepiece/Timepiece.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Timepiece.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatDate/Pods-WhatDate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E0A78E51B8BC96600B54772 /* Sources */ = {
@@ -299,14 +362,12 @@
 		};
 		2E0A78FF1B8BC96600B54772 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 686A7C645A9A59155D0AD559 /* Pods-WhatDate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Days From Today/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -320,14 +381,12 @@
 		};
 		2E0A79001B8BC96600B54772 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E9FC4987EFA5B84580FA56A /* Pods-WhatDate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Days From Today/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
